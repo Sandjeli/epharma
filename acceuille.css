@@ -145,12 +145,12 @@ h1 {
 /* Pour les écrans plus petits, tu peux ajuster les tailles */
 @media (max-width: 600px) {
     h1 {
-        font-size: 8vw;
+        font-size: 10vw;
     }
     .small-text {
-        font-size: 5vw;
+        font-size: 9vw;
     }
     .normal-text {
-        font-size: 4vw;
+        font-size: 7vw;
     }
 }
