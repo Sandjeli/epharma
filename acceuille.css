@@ -1,0 +1,130 @@
+/*Adaptation aux différents écrans*/
+ /* Styles spécifiques pour les écrans larges */
+ @media screen and (min-width: 768px) {
+    img {
+max-width: 100%;
+height: auto;
+}
+
+.container {
+display: flex;
+flex-direction: column; /* Pour les appareils mobiles */
+/* Autres styles */
+}
+
+body {
+font-size: 16px; /* Taille de base */
+}
+
+h1 {
+font-size: 2rem; /* 32px sur tous les écrans */
+}
+
+
+}
+
+/* Styles spécifiques pour les écrans étroits (mobiles) */
+@media screen and (max-width: 767px) {
+    img {
+max-width: 100%;
+height: auto;
+}
+
+.container {
+display: flex;
+flex-direction: column; /* Pour les appareils mobiles */
+/* Autres styles */
+}
+
+body {
+font-size: 16px; /* Taille de base */
+}
+
+h1 {
+font-size: 2rem; /* 32px sur tous les écrans */
+}
+
+
+}
+/*Fin adaptation aux différents écrans*/
+
+
+
+/*arrière plan en degradé*/
+body{
+    background: linear-gradient(to left, rgb(101, 168, 235), rgb(39, 39, 247));
+}
+/*centrer au milieu de la page*/
+h1{
+    text-align: center;
+    color:white;
+    font-size:70px;
+    height: 100vh; 
+    margin: 0; 
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.normal-text { 
+    font-weight: normal; /* Annule la mise en gras */ 
+}
+
+.PP{
+    text-align:center;
+    color:white;
+    font-size:50px;
+    margin-top:0;
+}
+
+/*taille du boutton*/
+button{
+    font-size:100xp;
+}
+
+.small-text { 
+    font-size: 40px; /* Ajustez cette valeur selon vos besoins */ 
+}
+
+/* Zoomer boutton */
+@keyframes boutonAnimation {
+    0% {
+        background-color: #07def182;
+        transform: scale(1);
+    }
+    50% {
+        background-color: #04ec14;
+        transform: scale(1.1);
+    }
+    100% {
+        background-color: #5eaf4c;
+        transform: scale(1);
+    }
+}
+
+/* Appliquer l'animation au bouton */
+.animer {
+    padding: 15px 25px;
+    font-size: 50px;
+    color: white;
+    background-color: #2c2e2c;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.animer:hover {
+    animation: boutonAnimation 2s infinite;
+}
+/* Styles pour le pied de page */
+.footer {
+    background-color: #232121;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
