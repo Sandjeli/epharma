@@ -52,7 +52,7 @@ font-size: 2rem; /* 32px sur tous les écrans */
 
 /*arrière plan en degradé*/
 body{
-    background: linear-gradient(to left, rgb(101, 168, 235), rgb(39, 39, 247));
+    background: linear-gradient(to top, rgb(97, 166, 234), rgb(39, 39, 247));
 }
 /*centrer au milieu de la page*/
 h1{
@@ -119,8 +119,8 @@ button{
 }
 /* Styles pour le pied de page */
 .footer {
-    background-color: #232121;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     text-align: center;
     padding: 10px;
     position: relative;
