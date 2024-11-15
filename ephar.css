@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(8, 206, 246);
+}
+h1{
+    text-align:center
+}
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    color: black;
+}
+li{
+    float:none
+}
+
+ul:hover{
+    color:red
+}
+
+acceuille{
+    background-color: red;
+}
