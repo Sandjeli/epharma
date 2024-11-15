@@ -41,7 +41,7 @@ font-size: 16px; /* Taille de base */
 }
 
 h1 {
-font-size: 2rem; /* 32px sur tous les écrans */
+font-size: 100%; /* 32px sur tous les écrans */
 }
 
 
@@ -127,4 +127,30 @@ button{
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS pour rendre le texte responsive */
+h1 {
+    font-size: 5vw; /* La taille du texte s'adapte à la largeur de la fenêtre */
+}
+
+.small-text {
+    font-size: 3vw; /* La taille du texte s'adapte à la largeur de la fenêtre */
+}
+
+.normal-text {
+    font-size: 2vw; /* La taille du texte s'adapte à la largeur de la fenêtre */
+}
+
+/* Pour les écrans plus petits, tu peux ajuster les tailles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 8vw;
+    }
+    .small-text {
+        font-size: 5vw;
+    }
+    .normal-text {
+        font-size: 4vw;
+    }
 }
