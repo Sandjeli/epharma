@@ -1,23 +1,33 @@
 body{
-    background-color: rgb(8, 206, 246);
+    background: linear-gradient(to right, rgb(97, 166, 234), rgb(39, 39, 247));
 }
+
 h1{
     text-align:center
 }
 ul{
-    list-style-type:none;
+    list-style-type:none; /*enlève les points*/
     margin:0;
     padding:0;
     color: black;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 80%;
 }
 li{
     float:none
 }
 
-ul:hover{
-    color:red
+.l1{
+    margin-left: 5%;
 }
-
-acceuille{
-    background-color: red;
+.l2{
+    margin-left: 7%;
+}
+.l3{
+    margin-left: 9%;
+}
+.l4{
+    margin-left: 11%;
 }
