@@ -31,3 +31,34 @@ li{
 .l4{
     margin-left: 11%;
 }
+/* Zoomer boutton */
+@keyframes boutonAnimation {
+    0% {
+        background-color: #07def182;
+        transform: scale(1);
+    }
+    50% {
+        background-color: #043aec;
+        transform: scale(1.1);
+    }
+    100% {
+        background-color:whitesmoke;
+        transform: scale(1);
+    }
+}
+
+/* Appliquer l'animation au bouton */
+.animer {
+    padding: 10px 10px;
+    font-size: 20px;
+    color: rgb(35, 30, 30);
+    background-color:whitesmoke;
+    border:dodgerblue;
+    border-radius: 25px;
+    cursor:pointer;
+    transition: transform 1s ease-in-out;
+}
+
+.animer:hover {
+    animation: boutonAnimation 1s infinite;
+}
