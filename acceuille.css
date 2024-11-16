@@ -65,25 +65,26 @@ h1{
     justify-content:center;
     align-items: center;
     font-family: Arial, sans-serif;
+    margin-bottom:-10%
 }
 .normal-text { 
     font-weight: normal; /* Annule la mise en gras */ 
+}
+
+.small-text { 
+    font-size: 40px; /* Ajustez cette valeur selon vos besoins */ 
 }
 
 .PP{
     text-align:center;
     color:white;
     font-size:50px;
-    margin-top:0;
+    margin-top:10%;
 }
 
 /*taille du boutton*/
 button{
     font-size:100xp;
-}
-
-.small-text { 
-    font-size: 40px; /* Ajustez cette valeur selon vos besoins */ 
 }
 
 /* Zoomer boutton */
@@ -123,7 +124,7 @@ button{
     color: black;
     text-align: center;
     padding: 10px;
-    position: relative;
+    position:relative;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -145,12 +146,24 @@ h1 {
 /* Pour les écrans plus petits, tu peux ajuster les tailles */
 @media (max-width: 600px) {
     h1 {
-        font-size: 14vw;
-    }
-    .small-text {
-        font-size: 10vw;
-    }
-    .normal-text {
         font-size: 8vw;
     }
+    .small-text {
+        font-size: 5vw;
+    }
+    .normal-text {
+        font-size: 4vw;
+    }
+}
+
+.img1{
+    margin-left:5%;
+    margin-bottom:-10%;
+    margin-top:0%
+}
+.img2{
+    position:initial;
+    margin-left:90%;
+    margin-bottom:-10%;
+    margin-top:0%;
 }
