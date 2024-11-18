@@ -89,7 +89,7 @@ body{
     background-image: url('fond\ acceuille.jpg');
     background-size:cover; /* Ajuste l'image pour qu'elle couvre tout l'arrière-plan */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    background-position:initial; /* Centre l'image dans l'élément */
+    background-position:center; /* Centre l'image dans l'élément */
     padding: 30px; /* Ajoute un peu de padding pour le contenu */
     color:white;/* Change la couleur du texte pour qu'il soit lisible sur l'image de fond */
 }
