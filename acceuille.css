@@ -62,17 +62,6 @@ body{
     font-size: 40px; /* Ajustez cette valeur selon vos besoins */ 
 }
 
-.PP{
-    margin:0;
-    padding:0;
-    text-align:center;
-    font-family: 'arial';
-    position:relative;
-    top:-20%;
-    left:50%;
-    transform: translateY(100%) translateX(-55.5%);
-}
-
 /*taille du boutton*/
 button{
     font-size:100xp;
@@ -110,16 +99,7 @@ button{
     animation: boutonAnimation 2s infinite;
 }
 /* Styles pour le pied de page */
-.footer {
-    background-color: whitesmoke;
-    color: black;
-    text-align: center;
-    padding: 0%;
-    position:relative;
-    width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom:0%;
-}
+
 
 /* CSS pour rendre le texte responsive */
 
@@ -143,25 +123,6 @@ button{
     transform: translateY(-13%);
 }
 button{
-    margin-top:50%;
-}
-
-.PP {
-    font-size:100%; /* 32px sur tous les écrans */
-    font-size: 100%; /* La taille du texte s'adapte à la largeur de la fenêtre */
-    font-size: 100%; /* 32px sur tous les écrans */
-        }
-
-/* Pour les écrans plus petits, tu peux ajuster les tailles */
-@media (max-width: 600px) {
-    .PP {
-        font-size: 100%;
-    }
-    .small-text {
-        font-size: 100%;
-    }
-    .normal-text {
-        font-size: 100%;
-    }
+    margin-top:80%;
 }
         
