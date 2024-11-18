@@ -64,7 +64,7 @@ body{
 
 /*taille du boutton*/
 button{
-    font-size:medium;
+    font-size:initial;
 }
 
 /* Zoomer boutton */
@@ -89,7 +89,7 @@ button{
     font-size: 50px;
     color: white;
     background-color: #2c2e2c;
-    border: none;
+    border:#04ec14;
     border-radius: 5px;
     cursor:pointer;
     transition: transform 0.3s ease-in-out;
@@ -103,11 +103,11 @@ button{
 /* CSS pour rendre le texte responsive */
 
 .small-text {
-    font-size: 3vw; /* La taille du texte s'adapte à la largeur de la fenêtre */
+    font-size: 100%; /* La taille du texte s'adapte à la largeur de la fenêtre */
 }
 
 .normal-text {
-    font-size: 2vw; /* La taille du texte s'adapte à la largeur de la fenêtre */
+    font-size: 100%; /* La taille du texte s'adapte à la largeur de la fenêtre */
 }
 
 .img1{
@@ -124,4 +124,3 @@ button{
 button{
     margin-top:100%;
 }
-        
