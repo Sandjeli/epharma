@@ -108,11 +108,11 @@ li{
 /* Appliquer l'animation au bouton */
 .animer {
     padding: 10px 10px;
-    font-size: 20px;
+    font-size: 10px;
     color: rgb(35, 30, 30);
     background-color:whitesmoke;
     border:dodgerblue;
-    border-radius: 25px;
+    border-radius: 30px;
     cursor:pointer;
     transition: transform 1s ease-in-out;
 }
