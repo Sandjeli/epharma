@@ -59,22 +59,9 @@ body{
     background-image: url('acceuille.jpg');
     background-size:cover; /* Ajuste l'image pour qu'elle couvre tout l'arrière-plan */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    background-position: center; /* Centre l'image dans l'élément */
+    background-position:center; /* Centre l'image dans l'élément */
     padding: 20px; /* Ajoute un peu de padding pour le contenu */
-    color:white;/* Change la couleur du texte pour qu'il soit lisible sur l'image de fond */
-}
-/*centrer au milieu de la page*/
-h1{
-    text-align: center;
-    color:white;
-    font-size:70px;
-    height: 100vh; 
-    margin: 0; 
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    margin-bottom:-10%
+    color:black/* Change la couleur du texte pour qu'il soit lisible sur l'image de fond */
 }
 .normal-text { 
     font-weight: normal; /* Annule la mise en gras */ 
@@ -85,10 +72,15 @@ h1{
 }
 
 .PP{
+    font-size:3em;
+    margin:0;
+    padding:0;
     text-align:center;
-    color:white;
-    font-size:50px;
-    margin-top:10%;
+    font-family: 'arial';
+    position:absolute;
+    top:20%;
+    left:50%;
+    transform: translateY(100%) translateX(-55.5%);
 }
 
 /*taille du boutton*/
@@ -132,11 +124,11 @@ button{
     background-color: whitesmoke;
     color: black;
     text-align: center;
-    padding: 10px;
+    padding: 0%;
     position:relative;
-    bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom:0%;
 }
 
 /* CSS pour rendre le texte responsive */
@@ -155,7 +147,7 @@ h1 {
 /* Pour les écrans plus petits, tu peux ajuster les tailles */
 @media (max-width: 600px) {
     h1 {
-        font-size: 8vw;
+        font-size: 10vw;
     }
     .small-text {
         font-size: 5vw;
@@ -166,13 +158,16 @@ h1 {
 }
 
 .img1{
-    margin-left:5%;
-    margin-bottom:-10%;
-    margin-top:0%
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .img2{
-    position:initial;
-    margin-left:90%;
-    margin-bottom:-10%;
-    margin-top:0%;
+    position:absolute;
+    top:5%;
+    left:90%;
+    transform: translateY(-13%);
+}
+button{
+    margin-top:50%;
 }
