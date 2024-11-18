@@ -1,52 +1,86 @@
-/*Adaptation aux différents écrans*/
- /* Styles spécifiques pour les écrans larges */
- @media screen and (min-width: 768px) {
-    img {
-max-width: 100%;
-height: auto;
-}
-
-.container {
-display: flex;
-flex-direction: column; /* Pour les appareils mobiles */
-/* Autres styles */
-}
-
+/* CSS pour rendre le corps de la page adaptatif */
 body {
-font-size: 16px; /* Taille de base */
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Utilise la largeur de la fenêtre */
+    height: 100vh; /* Utilise la hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Couleur de fond par défaut */
+    color: black; /* Couleur du texte par défaut */
 }
 
-h1 {
-font-size: 2rem; /* 32px sur tous les écrans */
+/* Pour le header */
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #007bff; /* Couleur de fond du header */
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-
+header h1 {
+    font-size: 5vw; /* La taille du texte s'adapte à la largeur de la fenêtre */
+    color: white; /* Couleur du texte du header */
 }
 
-/* Styles spécifiques pour les écrans étroits (mobiles) */
-@media screen and (max-width: 767px) {
-    img {
-max-width: 100%;
-height: auto;
+/* Pour le main */
+main {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.container {
-display: flex;
-flex-direction: column; /* Pour les appareils mobiles */
-/* Autres styles */
+main h2 {
+    font-size: 4vw; /* La taille du texte s'adapte à la largeur de la fenêtre */
 }
 
-body {
-font-size: 16px; /* Taille de base */
+main nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-h1 {
-font-size: 100%; /* 32px sur tous les écrans */
+main nav ul li {
+    margin: 10px 0;
 }
 
-
+main nav ul li a {
+    text-decoration:solid;
 }
-/*Fin adaptation aux différents écrans*/
+
+main nav ul li button.animer {
+    width: 100%; /* Ajuste la largeur du bouton pour qu'il s'adapte à l'écran */
+    max-width: 100%; /* Limite la largeur maximale du bouton */
+    padding: 5px; /* Ajoute du padding pour le bouton */
+    font-size: 1.3em; /* Ajuste la taille du texte du bouton */
+    border:#f0f0f0; /* Supprime les bordures */
+    border-radius: 10px; /* Ajoute des coins arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    background-color: whitesmoke; /* Couleur de fond du bouton */
+    color: black; /* Couleur du texte du bouton */
+}
+
+/* Pour les écrans plus petits, tu peux ajuster les tailles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 8vw;
+    }
+    main h2 {
+        font-size: 6vw;
+    }
+    main nav ul li button.animer {
+        font-size: 1em;
+    }
+}
+
 
 body{
     background: linear-gradient(to right, rgb(97, 166, 234), rgb(39, 39, 247));
@@ -55,7 +89,7 @@ body{
     background-image: url('fond\ acceuille.jpg');
     background-size:cover; /* Ajuste l'image pour qu'elle couvre tout l'arrière-plan */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    background-position: center; /* Centre l'image dans l'élément */
+    background-position:initial; /* Centre l'image dans l'élément */
     padding: 30px; /* Ajoute un peu de padding pour le contenu */
     color:white;/* Change la couleur du texte pour qu'il soit lisible sur l'image de fond */
 }
@@ -71,17 +105,17 @@ ul{
     display:flex;
     justify-content:center;
     align-items: center;
-    margin-top: 100%;
+    margin-top: 50%;
 }
 li{
     float:none
 }
 
 .l1{
-    margin-left: 5%;
+    margin-left: 3%;
 }
 .l2{
-    margin-left: 7%;
+    margin-left: 6%;
 }
 .l3{
     margin-left: 9%;
@@ -108,11 +142,11 @@ li{
 /* Appliquer l'animation au bouton */
 .animer {
     padding: 10px 10px;
-    font-size: 14px;
+    font-size: 13px;
     color: rgb(35, 30, 30);
     background-color:whitesmoke;
     border:dodgerblue;
-    border-radius: 30px;
+    border-radius: 10px;
     cursor:pointer;
     transition: transform 1s ease-in-out;
 }
