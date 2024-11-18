@@ -12,7 +12,7 @@ body {
     background-size: cover; /* Ajuste l'image pour qu'elle couvre tout l'arrière-plan */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     background-position: center; /* Centre l'image dans l'élément */
-    background-attachment: fixed; /* Fixe l'image de fond pour qu'elle ne défile pas avec le contenu */
+    background-attachment: local; /* Fixe l'image de fond pour qu'elle ne défile pas avec le contenu */
     color: white; /* Change la couleur du texte pour qu'il soit lisible sur l'image de fond */
 }
 
