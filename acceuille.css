@@ -64,7 +64,7 @@ body{
 
 /*taille du boutton*/
 button{
-    font-size:100xp;
+    font-size:medium;
 }
 
 /* Zoomer boutton */
@@ -100,7 +100,6 @@ button{
 }
 /* Styles pour le pied de page */
 
-
 /* CSS pour rendre le texte responsive */
 
 .small-text {
@@ -113,7 +112,7 @@ button{
 
 .img1{
     max-width: 100%; /* L'image ne dépassera pas la largeur de son conteneur */ 
-    height: auto; /* La hauteur s'ajustera automatiquement pour maintenir les proportions */
+    height: 100%; /* La hauteur s'ajustera automatiquement pour maintenir les proportions */
     margin:auto;
 }
 .img2{
@@ -123,6 +122,6 @@ button{
     transform: translateY(-13%);
 }
 button{
-    margin-top:80%;
+    margin-top:100%;
 }
         
