@@ -1,44 +1,65 @@
-/*Adaptation aux différents écrans*/
- /* Styles spécifiques pour les écrans larges */
- @media screen and (min-width: 768px) {
-    img {
-max-width: 100%;
-height: auto;
-}
-
-.container {
-display: flex;
-flex-direction: column; /* Pour les appareils mobiles */
-/* Autres styles */
-}
-
+/* CSS pour rendre le corps de la page adaptatif */
 body {
-font-size: 16px; /* Taille de base */
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Utilise la largeur de la fenêtre */
+    height: 100vh; /* Utilise la hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('fond/acceuille.jpg'); /* Corrige le chemin du fichier */
+    background-size: cover; /* Ajuste l'image pour qu'elle couvre tout l'arrière-plan */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image dans l'élément */
+    background-attachment: fixed; /* Fixe l'image de fond pour qu'elle ne défile pas avec le contenu */
+    color: white; /* Change la couleur du texte pour qu'il soit lisible sur l'image de fond */
 }
 
+/* Pour les images intégrées dans le contenu */
+img {
+    max-width: auto; /* L'image ne dépassera pas la largeur de son conteneur */
+    height: auto; /* La hauteur s'ajustera automatiquement pour maintenir les proportions */
+    display: block; /* Évite les espaces blancs en dessous des images */
+    margin: 0 auto; /* Centre l'image horizontalement */
 }
 
-/* Styles spécifiques pour les écrans étroits (mobiles) */
-@media screen and (max-width: 767px) {
-    img {
-max-width: 100%;
-height: auto;
+/* Pour les boutons */
+button.animer {
+    width: 100%; /* Ajuste la largeur du bouton pour qu'il s'adapte à l'écran */
+    max-width: 100%; /* Limite la largeur maximale du bouton */
+    padding: 10px; /* Ajoute du padding pour le bouton */
+    font-size: 2em; /* Ajuste la taille du texte du bouton */
+    border:solid, whitesmoke; /* Supprime les bordures */
+    border-radius: 15px; /* Ajoute des coins arrondis */
+    cursor: pointer; /* Change le curseur au survol */
 }
 
-.container {
-display: flex;
-flex-direction: column; /* Pour les appareils mobiles */
-/* Autres styles */
+/* Pour les textes */
+h1 {
+    font-size: 5vw; /* La taille du texte s'adapte à la largeur de la fenêtre */
 }
 
-body {
-font-size: 16px; /* Taille de base */
+.small-text {
+    font-size: 3vw; /* La taille du texte s'adapte à la largeur de la fenêtre */
 }
 
-
+.normal-text {
+    font-size: 2vw; /* La taille du texte s'adapte à la largeur de la fenêtre */
 }
-/*Fin adaptation aux différents écrans*/
 
+/* Pour les écrans plus petits, tu peux ajuster les tailles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 8vw;
+    }
+    .small-text {
+        font-size: 5vw;
+    }
+    .normal-text {
+        font-size: 4vw;
+    }
+}
 
 
 /*arrière plan en degradé*/
@@ -54,17 +75,10 @@ body{
     padding: 20px; /* Ajoute un peu de padding pour le contenu */
     color:black/* Change la couleur du texte pour qu'il soit lisible sur l'image de fond */
 }
-.normal-text { 
-    font-weight: normal; /* Annule la mise en gras */ 
-}
-
-.small-text { 
-    font-size: 40px; /* Ajustez cette valeur selon vos besoins */ 
-}
 
 /*taille du boutton*/
 button{
-    font-size:initial;
+    font-size:larger;
 }
 
 /* Zoomer boutton */
@@ -98,22 +112,12 @@ button{
 .animer:hover {
     animation: boutonAnimation 2s infinite;
 }
-/* Styles pour le pied de page */
-
-/* CSS pour rendre le texte responsive */
-
-.small-text {
-    font-size: 100%; /* La taille du texte s'adapte à la largeur de la fenêtre */
-}
-
-.normal-text {
-    font-size: 100%; /* La taille du texte s'adapte à la largeur de la fenêtre */
-}
 
 .img1{
     max-width: 100%; /* L'image ne dépassera pas la largeur de son conteneur */ 
     height: 100%; /* La hauteur s'ajustera automatiquement pour maintenir les proportions */
-    margin:auto;
+    margin: auto;
+
 }
 .img2{
     position:absolute;
@@ -124,3 +128,4 @@ button{
 button{
     margin-top:100%;
 }
+        
