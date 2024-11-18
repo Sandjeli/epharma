@@ -1,6 +1,14 @@
 body{
     background: linear-gradient(to right, rgb(97, 166, 234), rgb(39, 39, 247));
 }
+body{
+    background-image: url('fond\ acceuille.jpg');
+    background-size: cover; /* Ajuste l'image pour qu'elle couvre tout l'arrière-plan */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image dans l'élément */
+    padding: 20px; /* Ajoute un peu de padding pour le contenu */
+    color:white;/* Change la couleur du texte pour qu'il soit lisible sur l'image de fond */
+}
 
 h1{
     text-align:center
