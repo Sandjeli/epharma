@@ -1,0 +1,4 @@
+/*arrière plan en degradé*/
+body{
+    background: linear-gradient(to top, rgb(97, 166, 234), rgb(39, 39, 247));
+}
