@@ -2,3 +2,13 @@
 body{
     background: linear-gradient(to top, rgb(97, 166, 234), rgb(39, 39, 247));
 }
+/* CSS pour rendre le corps de la page adaptatif */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Utilise la largeur de la fenêtre */
+    height: 100vh; /* Utilise la hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
