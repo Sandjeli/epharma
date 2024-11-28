@@ -14,11 +14,12 @@ body {
 
 /* Pour le header */
 header {
-    width: 100%;
+    width: 90%;
     text-align: center;
-    background-color: #007bff; /* Couleur de fond du header */
+    background-color: #007bff57; /* Couleur de fond du header */
     padding: 0px;
     box-sizing: border-box;
+    border-radius:10%
 }
 
 header h1 {
