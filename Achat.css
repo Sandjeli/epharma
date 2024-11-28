@@ -18,3 +18,64 @@ body {
     background-position: center; /* Centre l'image dans l'élément */
     background-attachment:local; /* Fixe l'image de fond pour qu'elle ne défile pas avec le contenu */
     color: white; /* Change la couleur du texte pour qu'il soit lisible sur l'image de fond */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #214ecb;
+    border-bottom: 1px solid #ddd;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background-color: lightblue; /* Optionnel, pour voir le div plus facilement */ 
+    padding: 10px; /* Optionnel, pour ajouter un peu d'espace à l'intérieur du div */
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background-color: lightblue; /* Optionnel, pour voir le div plus facilement */ 
+    padding: 10px; /* Optionnel, pour ajouter un peu d'espace à l'intérieur du div */
+}
+
+.dropdown-menu {
+    display: none;
+    position:relative;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
