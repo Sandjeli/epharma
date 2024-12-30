@@ -1,81 +1,66 @@
-/*arrière plan en degradé*/
 body{
-    background: linear-gradient(to top, rgb(97, 166, 234), rgb(39, 39, 247));
-}
-
-/* CSS pour rendre le corps de la page adaptatif */
-body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 100vw; /* Utilise la largeur de la fenêtre */
-    height: 100vh; /* Utilise la hauteur de la fenêtre */
-    display: flex;
-    flex-direction: column;
+    background:linear-gradient(to right,grey,whitesmoke);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    display:flex;
     justify-content: center;
     align-items: center;
-    background-size: cover; /* Ajuste l'image pour qu'elle couvre tout l'arrière-plan */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    background-position: center; /* Centre l'image dans l'élément */
-    background-attachment:local; /* Fixe l'image de fond pour qu'elle ne défile pas avec le contenu */
-    color: white; /* Change la couleur du texte pour qu'il soit lisible sur l'image de fond */
+    background: #333;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
 }
 
-
-body {
-    font-family: Arial, sans-serif;
+h1{
+    color:white;
+}
+h2{
+    color:green;
 }
 
-header {
+ul{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #214ecb;
-    border-bottom: 1px solid #ddd;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    background-color: lightblue; /* Optionnel, pour voir le div plus facilement */ 
-    padding: 10px; /* Optionnel, pour ajouter un peu d'espace à l'intérieur du div */
+    list-style-type:none;
+}
+li{
+    margin-right: 10px;
 }
 
-.menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    background-color: lightblue; /* Optionnel, pour voir le div plus facilement */ 
-    padding: 10px; /* Optionnel, pour ajouter un peu d'espace à l'intérieur du div */
+fieldset{
+    background-color: whitesmoke;
+    padding:30px;
 }
 
-.dropdown-menu {
-    display: none;
-    position:relative;
-    top: 50px;
-    right: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+footer{
+    position:absolute;
+    background-color: #333;
+    border:5px solid rgba(245, 245, 245, 0.463);
+    bottom:0;
+    width: 100%;
+    text-align: center;
 }
 
-.dropdown-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.dropdown-menu li {
-    border-bottom: 1px solid #ddd;
-}
-
-.dropdown-menu li a {
-    display: block;
-    padding: 10px 20px;
+header a {
+    color: #fff;
     text-decoration: none;
-    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
 }
-
-.dropdown-menu li a:hover {
-    background-color: #f0f0f0;
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
 }
